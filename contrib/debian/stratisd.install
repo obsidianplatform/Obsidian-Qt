@@ -1,0 +1,2 @@
+debian/bin/obsidiand usr/bin
+src/obsidiand usr/lib/obsidian

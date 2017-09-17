@@ -1,12 +1,8 @@
-# Obsidian-Qt - The Official Obsidian ODN Wallet
-
-Binaries for Windows, Ubuntu and macOS are available on the Releases tab:
-
-https://github.com/obsidianproject/Obsidian-Qt/releases
-
-To build for Linux, see build.sh and src/buildquick.sh.
-
-## License
+Copyright (c) 2017-2018 The Obsidian Developers
+Copyright (c) 2014-2017 Stratis Developers
+Copyright (c) 2013-2014 NovaCoin Developers
+Copyright (c) 2011-2012 PPCoin Developers
+Copyright (c) 2009-2015 Bitcoin Developers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,11 +21,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-Copyright (c) 2009-2018: see LICENSE
-
-
-
-
-
-

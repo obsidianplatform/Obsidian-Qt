@@ -1,0 +1,36 @@
+src/*.exe
+src/obsidian
+src/test_obsidian
+src/obsidian
+src/obsidiand
+src/test_obsidian
+src/build.h
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.obsidian
+#compilation and Qt preprocessor part
+*.qm
+Makefile
+Obsidian-Qt
+#resources cpp
+qrc_*.cpp
+#qt creator
+*.pro.user
+#mac specific
+.DS_Store
+build
+.qmake.stash
+Makefile.Debug
+Makefile.Release
+release/
+obsidian-qt_plugin_import.cpp
+object_script.Obsidian-Qt.Debug
+object_script.Obsidian-Qt.Release
+obsidian-qt_plugin_import.cpp
+
+!src/leveldb/Makefile
