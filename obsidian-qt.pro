@@ -228,36 +228,9 @@ HEADERS += src/qt/bitcoingui.h \
     src/netbase.h \
     src/clientversion.h \
     src/threadsafety.h \
-    src/tinyformat.h \
-    src/obj/x13hash/sph_blake.h \
-    src/obj/x13hash/sph_skein.h \
-    src/obj/x13hash/sph_keccak.h \
-    src/obj/x13hash/sph_jh.h \
-    src/obj/x13hash/sph_groestl.h \
-    src/obj/x13hash/sph_bmw.h \
-    src/obj/x13hash/sph_types.h \
-    src/obj/x13hash/sph_luffa.h \
-    src/obj/x13hash/sph_cubehash.h \
-    src/obj/x13hash/sph_echo.h \
-    src/obj/x13hash/sph_shavite.h \
-    src/obj/x13hash/sph_simd.h \
-    src/obj/x13hash/sph_hamsi.h \
-    src/obj/x13hash/sph_fugue.h
+    src/tinyformat.h
 
 SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
-    src/obj/x13hash/blake.c \
-    src/obj/x13hash/bmw.c \
-    src/obj/x13hash/groestl.c \
-    src/obj/x13hash/jh.c \
-    src/obj/x13hash/keccak.c \
-    src/obj/x13hash/skein.c \
-    src/obj/x13hash/luffa.c \
-    src/obj/x13hash/cubehash.c \
-    src/obj/x13hash/shavite.c \
-    src/obj/x13hash/echo.c \
-    src/obj/x13hash/simd.c \
-    src/obj/x13hash/hamsi.c \
-    src/obj/x13hash/fugue.c \
     src/qt/transactiontablemodel.cpp \
     src/qt/addresstablemodel.cpp \
     src/qt/optionsdialog.cpp \
