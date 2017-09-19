@@ -93,7 +93,7 @@ endif
 # CXXFLAGS can be specified on the make command line, so we use xCXXFLAGS that only
 # adds some defaults in front. Unfortunately, CXXFLAGS=... $(CXXFLAGS) does not work.
 xCXXFLAGS=-O2 $(EXT_OPTIONS) -pthread -Wall -Wextra -Wno-ignored-qualifiers -Wformat -Wformat-security -Wno-unused-parameter \
-    $(DEBUGFLAGS) $(DEFS) $(HARDENING) $(CXXFLAGS) 
+    $(DEBUGFLAGS) $(DEFS) $(HARDENING) $(CXXFLAGS)
 
 # LDFLAGS can be specified on the make command line, so we use xLDFLAGS that only
 # adds some defaults in front. Unfortunately, LDFLAGS=... $(LDFLAGS) does not work.
@@ -134,21 +134,7 @@ OBJS= \
     obj/scrypt-arm.o \
     obj/scrypt-x86.o \
     obj/scrypt-x86_64.o \
-    obj/chainparams.o \
-    obj/x13hash/cubehash.o \
-    obj/x13hash/luffa.o \
-    obj/x13hash/aes_helper.o \
-    obj/x13hash/echo.o \
-    obj/x13hash/shavite.o \
-    obj/x13hash/simd.o \
-    obj/x13hash/blake.o\
-    obj/x13hash/bmw.o\
-    obj/x13hash/groestl.o\
-    obj/x13hash/jh.o\
-    obj/x13hash/keccak.o\
-    obj/x13hash/skein.o\
-    obj/x13hash/hamsi.o\
-	obj/x13hash/fugue.o
+    obj/chainparams.o
 
 ifeq (${USE_WALLET}, 1)
     DEFS += -DENABLE_WALLET

@@ -30,7 +30,7 @@ Dependencies
  miniupnpc   UPnP Support      Optional firewall-jumping support
  libqrencode QRCode generation Optional QRCode generation
 
-Note that libexecinfo should be installed, if you building under *BSD systems. 
+Note that libexecinfo should be installed, if you building under *BSD systems.
 This library provides backtrace facility.
 
 miniupnpc may be used for UPnP port mapping.  It can be downloaded from
@@ -61,11 +61,7 @@ Versions used in this release:
 
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
-sudo apt-get install build-essential
-sudo apt-get install libssl-dev
-sudo apt-get install libdb++-dev
-sudo apt-get install libboost-all-dev
-sudo apt-get install libqrencode-dev
+sudo apt-get install build-essential libssl-dev libdb++-dev libboost-all-dev libqrencode-dev libsodium-dev
 
 If using Boost 1.37, append -mt to the boost libraries in the makefile.
 
