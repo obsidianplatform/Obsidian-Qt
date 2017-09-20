@@ -1,5 +1,21 @@
 #!/bin/bash
 
+
+#################################################################
+# Define functions necessary for building Obsidian              #
+#################################################################
+
+cleandeps(){
+	rm -rf LATEST.tar.gz
+	rm -rf libsodium*
+}
+
+build(){
+	cd src
+	sudo chmod +x buildquick.sh
+	sudo ./buildquick.sh
+}
+
 #################################################################
 # Update Ubuntu and install prerequisites for running Obsidian  #
 #################################################################
@@ -16,8 +32,17 @@ sudo apt-get install -y qt4-qmake libqt4-dev libminiupnpc-dev libdb++-dev libdb-
 sudo add-apt-repository -y ppa:bitcoin/bitcoin
 sudo apt-get update
 sudo apt-get install -y libdb4.8-dev libdb4.8++-dev
+wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz 
+tar -xvzf LATEST.tar.gz 
+cd libsodium* 
+./configure 
+make
+make check 
+sudo make install 
+sudo ldconfig
 sudo apt-get install -y libsodium
-cd src
-sudo ./buildquick.sh
+cd ..
+cleandeps
+build
 
 
