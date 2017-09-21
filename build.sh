@@ -15,6 +15,7 @@ build(){
 	sudo chmod +x buildquick.sh
 	sudo ./buildquick.sh
 }
+
 init(){
         mkdir -p ~/.obsidian && touch $_/obsidian.conf
         config=~/.obsidian/obsidian.conf
@@ -22,7 +23,16 @@ init(){
         read user
         echo "rpcuser=$user" >> $config 
         echo "(Required) RPC Password: "
-        read password
+        unset password;
+        while IFS=$'\n' read -r -s -n1 pass; do
+          if [[ -z $pass ]]; then
+            echo
+            break
+          else
+            echo -n '*'
+            password+=$pass
+          fi
+        done
         echo "rpcpassword=$password" >> $config
         echo "(Optional) Email Address For Wallet Alerts: "
         read email
