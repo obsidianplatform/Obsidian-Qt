@@ -15,6 +15,19 @@ build(){
 	sudo chmod +x buildquick.sh
 	sudo ./buildquick.sh
 }
+init(){
+        mkdir -p ~/.obsidian && touch $_/obsidian.conf
+        config=~/.obsidian/obsidian.conf
+        echo "(Required) RPC User: "
+        read user
+        echo "rpcuser=$user" >> $config 
+        echo "(Required) RPC Password: "
+        read password
+        echo "rpcpassword=$password" >> $config
+        echo "(Optional) Email Address For Wallet Alerts: "
+        read email
+        echo "alertnotify=echo %s | mail -s 'Obsidian Alert' $email" >> $config
+}
 
 #################################################################
 # Update Ubuntu and install prerequisites for running Obsidian  #
@@ -43,6 +56,5 @@ sudo ldconfig
 sudo apt-get install -y libsodium
 cd ..
 cleandeps
+init
 build
-
-
