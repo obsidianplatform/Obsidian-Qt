@@ -82,6 +82,8 @@ public:
         vSeeds.push_back(CDNSSeedData("Seednode2", "obsidianblockchain2.westeurope.cloudapp.azure.com"));
         vSeeds.push_back(CDNSSeedData("Seednode3", "obsidianseednode1.westeurope.cloudapp.azure.com"));
         vSeeds.push_back(CDNSSeedData("Seednode4", "seed1.obsidianplatform.com:8080"));
+        vSeeds.push_back(CDNSSeedData("Seednode5", "seed2.obsidianplatform.com:8080"));
+        
  
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 75); 
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 125); 
