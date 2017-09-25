@@ -5,7 +5,7 @@
 
 # Mac OS X makefile for obsidian
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
-
+MACOSX_DEPLOYMENT_TARGET=10.10
 CXX=llvm-g++
 DEPSDIR=/opt/local
 

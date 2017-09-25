@@ -27,6 +27,10 @@ but you can get the current version from http://developer.apple.com
 
 1.  Clone the github tree to get the source code:
 
+before compiling any dependency, set target:
+
+MACOSX_DEPLOYMENT_TARGET=10.10
+
 git clone https://github.com/rat4/obsidian.git obsidian
 
 2.  Download and install MacPorts from http://www.macports.org/
