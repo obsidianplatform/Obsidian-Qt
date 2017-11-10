@@ -4,9 +4,10 @@ Binaries for Windows, Ubuntu and macOS are available on the Releases tab:
 
 https://github.com/obsidianproject/Obsidian-Qt/releases
 
-## Instructions
+## Instruction Video 
 
 https://www.youtube.com/watch?v=beiwOTMChSQ
+(credits: @mhs)
 
 To build for Linux, see build.sh and src/buildquick.sh.
 
