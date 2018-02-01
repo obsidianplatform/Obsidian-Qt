@@ -11,31 +11,22 @@ cleandeps(){
     rm -rf libsodium*
 }
 
-build_cli(){
-
-    cd src
-    mkdir ../binarys
-    if [[ "$@" == "--static" ]]
-    then
-        make -j$NPROC -f makefile.unix STATIC=1
-    else
+build_cli_dyn(){
         make -j$NPROC -f makefile.unix
-    fi
-
-    mv obsidiand ../binarys/
-    cd ..
 }
 
-build_gui(){
-    if [[ "$@" == "--static" ]]
-    then
-        qmake "RELEASE=1"
-    else
-        qmake
-    fi
+build_cli_static(){
+STATIC=1 make -j$NPROC -f makefile.unix
+}
 
+build_gui_static(){
+    qmake "RELEASE=1"
     make -j$NPROC
-    mv Obsidian-Qt binarys/
+}
+
+build_gui_dyn(){
+    qmake
+    make -j$NPROC
 }
 
 init(){
@@ -93,5 +84,20 @@ install_deps(){
 install_deps
 cleandeps
 init
-build_cli
-build_gui
+mkdir binarys
+if [[ "$1" == "--static" ]]
+then
+    cd src
+    build_cli_static
+    mv obsidiand ../binarys
+    cd ..
+    build_gui_static
+    mv Obsidian-Qt binarys/
+else
+    cd src
+    build_cli_dyn
+    mv obsidiand ../binarys
+    cd ..
+    build_gui_dyn
+    mv Obsidian-Oq binarys/
+fi
