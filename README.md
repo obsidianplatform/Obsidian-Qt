@@ -10,6 +10,7 @@ https://www.youtube.com/watch?v=beiwOTMChSQ
 (credits: @mhs)
 
 To build for Linux, see build.sh and src/buildquick.sh.
+For a build with static linking, look at new-build.sh.
 
 ## License
 
