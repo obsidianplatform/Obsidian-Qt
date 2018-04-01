@@ -34,6 +34,9 @@ THE SOFTWARE.
 
 Copyright (c) 2009-2018: see LICENSE
 
+## Exclusion of Warranty and Liability
+Warranty and Liability is excluded by the maximum possible extend allowed by the law. Place of court is Munich, Germany.
+
 
 
 
