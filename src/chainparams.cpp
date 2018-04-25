@@ -78,11 +78,9 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x062e0ef40ca83213f645710bf497cc68220d42ac2254d31bbc8fb64a4d207209"));
 
 
-        vSeeds.push_back(CDNSSeedData("Seednode1", "obsidianblockchain1.westeurope.cloudapp.azure.com"));
-        vSeeds.push_back(CDNSSeedData("Seednode2", "obsidianblockchain2.westeurope.cloudapp.azure.com"));
-        vSeeds.push_back(CDNSSeedData("Seednode3", "obsidianseednode1.westeurope.cloudapp.azure.com"));
-        vSeeds.push_back(CDNSSeedData("Seednode4", "seed1.obsidianplatform.com:8080"));
-        vSeeds.push_back(CDNSSeedData("Seednode5", "seed2.obsidianplatform.com:8080"));
+        vSeeds.push_back(CDNSSeedData("Seednode1", "138.68.191.239"));  // ODN XXL1
+        vSeeds.push_back(CDNSSeedData("Seednode2", "104.131.9.93"));    // ODN XXL2
+        vSeeds.push_back(CDNSSeedData("Seednode3", "206.189.175.113")); // ODN XXL3
         
  
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 75); 
