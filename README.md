@@ -2,7 +2,7 @@
 
 Binaries for Windows, Ubuntu and macOS are available on the Releases tab:
 
-https://github.com/obsidianproject/Obsidian-Qt/releases
+https://github.com/obsidianplatform/Obsidian-Qt/releases
 
 ## Instruction Video 
 
