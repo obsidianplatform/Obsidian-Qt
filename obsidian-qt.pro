@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = Obsidian-Qt
-VERSION = 1.0.0.7
+VERSION = 1.1.0.1
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += ENABLE_WALLET
