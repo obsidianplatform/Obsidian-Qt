@@ -1,13 +1,13 @@
 # Obsidian-Qt - The Official Obsidian ODN Wallet
 
-Binaries for Windows, Ubuntu and macOS are available on the Releases tab:
+Binaries for Windows, Ubuntu and MacOSX are available on the Releases tab:
 
 https://github.com/obsidianplatform/Obsidian-Qt/releases
 
-## Instruction Video 
+## Instructional Video 
 
 https://www.youtube.com/watch?v=beiwOTMChSQ
-(credits: @mhs)
+(credits: @mhs Obsidian community member)
 
 To build for Linux, see build.sh and src/buildquick.sh.
 For a build with static linking, look at new-build.sh.
@@ -35,10 +35,4 @@ THE SOFTWARE.
 Copyright (c) 2009-2018: see LICENSE
 
 ## Exclusion of Warranty and Liability
-Warranty and Liability is excluded by the maximum possible extend allowed by the law. Place of court is Munich, Germany.
-
-
-
-
-
-
+Warranty and Liability is excluded by the maximum possible extend allowed by the law.
