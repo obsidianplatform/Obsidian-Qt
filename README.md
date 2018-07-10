@@ -1,13 +1,8 @@
-# Obsidian-Qt - The Official Obsidian ODN Wallet
+# Obsidian-Qt - The Official ODN Wallets, supported by Obsidian Platform
 
 Binaries for Windows, Ubuntu and MacOSX are available on the Releases tab:
 
 https://github.com/obsidianplatform/Obsidian-Qt/releases
-
-## Instructional Video 
-
-https://www.youtube.com/watch?v=beiwOTMChSQ
-(credits: @mhs Obsidian community member)
 
 To build for Linux, see build.sh and src/buildquick.sh.
 For a build with static linking, look at new-build.sh.
