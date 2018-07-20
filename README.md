@@ -26,7 +26,6 @@ enter them and press <Enter>
 
 ```
 ./new-build.sh
-
 ```
 This generates a folder called *binarys* where the newly build binarys for
 *Obsidian-Qt* and *obsidiand* can be found.
