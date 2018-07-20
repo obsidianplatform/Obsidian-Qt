@@ -7,6 +7,39 @@ https://github.com/obsidianplatform/Obsidian-Qt/releases
 To build for Linux, see build.sh and src/buildquick.sh.
 For a build with static linking, look at new-build.sh.
 
+## Building Obsidian-QT
+### Ubuntu
+To install dependencys and build Obsidian-QT under Ubuntu,
+open a terminal and then do the following:
+
+```
+#clone the github repository
+git clone https://github.com/obsidianplatform/Obsidian-Qt
+
+#move into Obsidian-Qt folder
+cd Obsidian-Qt
+
+#run buildscript to build binarys
+#when asked for RPC-User and RPC-Password,
+#choose a user name and a secure password,
+#enter then and press <Enter>
+
+./new-build.sh
+
+```
+This generates a folder called **binarys** where the newly build binarys for
+**Obsidian-Qt** and **obsidiand** can be found.
+
+#### staticaly linked builds
+Staticaly linked builds are prefered when the binary should
+be runnable on different other GNU/Linux systems then Ubuntu.
+To build the binarys staticaly, just call the **new-build.sh**
+with the **--static** parameter.
+```
+./new-build.sh --static
+```
+This builds the **Obsidian-QT** as well as **obsidiand** binarys staticaly.
+
 ## License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
