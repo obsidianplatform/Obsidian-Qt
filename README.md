@@ -22,7 +22,7 @@ cd Obsidian-Qt
 run buildscript to build binarys,
 when asked for a RPC-User and a RPC-Password,
 choose a username and a secure password,
-enter them and press <Enter>
+enter them and press **Enter**
 
 ```
 ./new-build.sh
