@@ -99,5 +99,5 @@ else
     mv obsidiand ../binarys
     cd ..
     build_gui_dyn
-    mv Obsidian-Oq binarys/
+    mv Obsidian-Qt binarys/
 fi
