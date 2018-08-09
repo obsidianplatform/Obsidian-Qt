@@ -7,6 +7,13 @@ https://github.com/obsidianplatform/Obsidian-Qt/releases
 To build for Linux, see build.sh and src/buildquick.sh.
 For a build with static linking, look at new-build.sh.
 
+Published by Obsidian (OPL).
+## OPL initiatives
+
+https://obsidianplatform.com and https://odinblockchain.org
+
+Only trust official releases published on this "ObsidianPlatform" Github Organisation https://github.com/obsidianplatform
+
 ## License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
