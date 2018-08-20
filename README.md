@@ -7,7 +7,7 @@ https://github.com/obsidianplatform/Obsidian-Qt/releases
 
 ## Building Obsidian-QT
 ### Ubuntu
-To install dependencys and build Obsidian-QT under Ubuntu,
+To install dependencies and build Obsidian-QT under Ubuntu,
 open a terminal and then do the following:
 
 
@@ -31,7 +31,7 @@ This generates a folder called *binarys* where the newly build binarys for
 *Obsidian-Qt* and *obsidiand* can be found.
 
 #### staticaly linked builds
-Staticaly linked builds are prefered when the binary should
+Statically linked builds are prefered when the binary should
 be runnable on different other GNU/Linux systems then Ubuntu.
 To build the binarys staticaly, just call the *new-build.sh*
 with the *--static* parameter.
