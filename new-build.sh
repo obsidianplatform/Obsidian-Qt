@@ -12,11 +12,11 @@ cleandeps(){
 }
 
 build_cli_dyn(){
-        make -j$NPROC -f makefile.unix
+    make -j$NPROC -f makefile.unix
 }
 
 build_cli_static(){
-STATIC=1 make -j$NPROC -f makefile.unix
+    STATIC=1 make -j$NPROC -f makefile.unix
 }
 
 build_gui_static(){
@@ -84,20 +84,20 @@ install_deps(){
 install_deps
 cleandeps
 init
-mkdir binarys
+mkdir bin
 if [[ "$1" == "--static" ]]
 then
     cd src
     build_cli_static
-    mv obsidiand ../binarys
+    mv obsidiand ../bin
     cd ..
     build_gui_static
-    mv Obsidian-Qt binarys/
+    mv Obsidian-Qt bin/
 else
     cd src
     build_cli_dyn
-    mv obsidiand ../binarys
+    mv obsidiand ../bin
     cd ..
     build_gui_dyn
-    mv Obsidian-Qt binarys/
+    mv Obsidian-Qt bin/
 fi
