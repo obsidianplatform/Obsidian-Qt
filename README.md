@@ -32,13 +32,13 @@ This generates a folder called *binarys* where the newly build binarys for
 
 #### statically linked builds
 Statically linked builds are prefered when the binary should
-be runnable on different other GNU/Linux systems then Ubuntu.
-To build the binarys statically, just call the *new-build.sh*
+be executable on other GNU/Linux systems.
+To build the binaries statically, just call the *new-build.sh*
 with the *--static* parameter.
 ```
 ./new-build.sh --static
 ```
-This builds the *Obsidian-QT* as well as *obsidiand* binarys staticaly.
+This builds the *Obsidian-QT* as well as *obsidiand* binaries staticaly.
 
 ## License
 
