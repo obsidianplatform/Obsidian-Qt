@@ -4,8 +4,41 @@ Binaries for Windows, Ubuntu and MacOSX are available on the Releases tab:
 
 https://github.com/obsidianplatform/Obsidian-Qt/releases
 
-To build for Linux, see build.sh and src/buildquick.sh.
-For a build with static linking, look at new-build.sh.
+
+## Building Obsidian-QT
+### Ubuntu
+To install dependencies and build Obsidian-QT under Ubuntu,
+open a terminal and then do the following:
+
+
+clone the github repository
+```
+git clone https://github.com/obsidianplatform/Obsidian-Qt
+```
+move into Obsidian-Qt folder
+```
+cd Obsidian-Qt
+```
+run buildscript to build binaries,
+when asked for a RPC-User and a RPC-Password,
+choose a username and a secure password,
+enter them and press **Enter**
+
+```
+./new-build.sh
+```
+This generates a folder called *bin* where the newly buit binaries for
+*Obsidian-Qt* and *obsidiand* can be found.
+
+#### Statically linked builds
+Statically linked builds are prefered when the binary should
+be executable on other GNU/Linux systems.
+To build the binaries statically, just call the *new-build.sh*
+with the *--static* parameter.
+```
+./new-build.sh --static
+```
+This builds the *Obsidian-QT* as well as *obsidiand* binaries staticaly.
 
 Published by Obsidian (OPL).
 ## OPL initiatives
