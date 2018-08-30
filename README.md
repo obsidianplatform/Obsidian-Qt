@@ -19,7 +19,7 @@ move into Obsidian-Qt folder
 ```
 cd Obsidian-Qt
 ```
-run buildscript to build binarys,
+run buildscript to build binaries,
 when asked for a RPC-User and a RPC-Password,
 choose a username and a secure password,
 enter them and press **Enter**
@@ -27,10 +27,10 @@ enter them and press **Enter**
 ```
 ./new-build.sh
 ```
-This generates a folder called *binarys* where the newly build binarys for
+This generates a folder called *bin* where the newly buit binaries for
 *Obsidian-Qt* and *obsidiand* can be found.
 
-#### statically linked builds
+#### Statically linked builds
 Statically linked builds are prefered when the binary should
 be executable on other GNU/Linux systems.
 To build the binaries statically, just call the *new-build.sh*
