@@ -137,4 +137,10 @@ json_spirit::Object JSONRPCReplyObj(const json_spirit::Value& result, const json
 std::string JSONRPCReply(const json_spirit::Value& result, const json_spirit::Value& error, const json_spirit::Value& id);
 json_spirit::Object JSONRPCError(int code, const std::string& message);
 
+static const int DEFAULT_RPC_SERIALIZE_VERSION = 1;
+static const int SERIALIZE_TRANSACTION_NO_WITNESS = 0x40000000;
+
+// Retrieves any serialization flags requested in command line argument
+int RPCSerializationFlags();
+
 #endif
